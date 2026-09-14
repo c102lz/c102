@@ -1,6 +1,12 @@
 import java.util.Scanner;
 import java.util.ArrayList;
 public class Main {
+    public static void clear()
+    {
+        System.out.println("\\033[H\\033[2J");
+        System.out.flush();
+    }
+
     public static void main(String[] args) {
         System.out.println("You are in Mr. Au's class and you must successfully survive. Select options by entering the corresponding number.");
         Scanner scanner = new Scanner(System.in);
@@ -12,7 +18,9 @@ public class Main {
         }
         else if(choice == 2){
             System.out.println("Goodbye.");
+            System.exit(0);
         }
+        else System.out.println("Sorry, this is not an option");
         else {
             System.out.println("Sorry, this is not an option");
         }
