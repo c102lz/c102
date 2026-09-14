@@ -21,9 +21,7 @@ public class Main {
             System.exit(0);
         }
         else System.out.println("Sorry, this is not an option");
-        else {
-            System.out.println("Sorry, this is not an option");
-        }
+
 
 
 
